@@ -4,6 +4,7 @@
 			{
 				"below" : "0.0.2",
 				"severity" : "low",
+				"score" : 4.5,
 				"identifiers" : {
 					"CVE" : [ "CVE-XXXX-XXXX" ],
 					"bug" : "1234",
@@ -25,11 +26,15 @@
 			{
 				"below" : "1.6.3",
 				"severity" : "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3",
 				"identifiers" : { "CVE": [ "CVE-2011-4969" ] },
 				"info" : [ "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4969" , "http://research.insecurelabs.org/jquery/test/" ]
 			},
 			{
 				"below" : "1.9.0b1",
+				"score" : 5.5,
+				"title" : "Selector interpreted as HTML in jQuery before 1.9.0b1",
 				"identifiers": {
 					"bug": "11290",
 					"summary": "Selector interpreted as HTML"
@@ -55,6 +60,8 @@
 			{
 				"below" : "1.2.0",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "Cross-site scripting (XSS) vulnerability in jQuery-migrate before 1.2.0",
 				"identifiers": {
 					"release": "jQuery Migrate 1.2.0 Released",
 					"summary": "cross-site-scripting"
@@ -64,6 +71,8 @@
 			{
 				"below" : "1.2.2",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "Selector interpreted as HTML in jQuery-migrate before 1.2.2",
 				"identifiers": {
 					"bug": "11290",
 					"summary": "Selector interpreted as HTML"
@@ -82,18 +91,24 @@
 			{
 				"below" : "1.0RC2",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Remote cross-site scripting (XSS) vulnerability in jQuery-mobile before 1.0RC2",
 				"identifiers": {"osvdb": ["94563", "93562", "94316", "94561", "94560"]},
 				"info" : [ "http://osvdb.org/show/osvdb/94563", "http://osvdb.org/show/osvdb/94562", "http://osvdb.org/show/osvdb/94316", "http://osvdb.org/show/osvdb/94561", "http://osvdb.org/show/osvdb/94560" ]
 			},
 			{
 				"below" : "1.0.1",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Remote cross-site scripting (XSS) vulnerability in jQuery-mobile before 1.0.1",
 				"identifiers": {"osvdb": "94317"},
 				"info": [ "http://osvdb.org/show/osvdb/94317" ]
 			},
 			{
 				"below" : "1.1.2",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "Cross-site scripting (XSS) vulnerability in jQuery-mobile before 1.1.2",
 				"identifiers": {
 					"issue": "4787",
 					"release": "http://jquerymobile.com/changelog/1.1.2/",
@@ -104,6 +119,8 @@
 			{
 				"below" : "1.2.0",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "Cross-site scripting (XSS) vulnerability in jQuery-mobile before 1.2.0",
 				"identifiers": {
 					"issue": "4787",
 					"release": "http://jquerymobile.com/changelog/1.2.0/",
@@ -126,6 +143,8 @@
 				"atOrAbove": "1.8.9",
 				"below" : "1.10.0",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "Title cross-site scripting vulnerability in jQuery-ui-dialog",
 				"identifiers": {
 					"bug": "6016",
 					"summary": "Title cross-site scripting vulnerability"
@@ -143,24 +162,14 @@
 			"hashes"		: {}
 		}
 	},
-	"jquery-ui-autocomplete" : {
-		"vulnerabilities" : [ ],
-		"extractors" : {
-			"func"    		: [ "jQuery.ui.autocomplete.version" ],
-			"filecontent"	: [
-				"/\\*!? jQuery UI - v(§§version§§)(.*\n){1,3}.*jquery\\.ui\\.autocomplete\\.js",
-				"/\\*!?[\n *]+jQuery UI (§§version§§)(.*\n)*.*\\.ui\\.autocomplete",
-				"/\\*!?[\n *]+jQuery UI Autocomplete (§§version§§)"
-			],
-			"hashes"		: {}
-		}
-	},
 	"jquery-ui-tooltip" : {
 		"vulnerabilities" : [
 			{
 				"atOrAbove": "1.9.2",
 				"below" : "1.10.0",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Autocomplete cross-site scripting vulnerability in jquery-ui-tooltip",
 				"identifiers": {
 					"bug": "8859",
 					"summary": "Autocomplete cross-site scripting vulnerability"
@@ -182,13 +191,18 @@
 		"vulnerabilities" : [
 			{
 				"below" : "3.1.5",
-				"severity" : "high",
+				"severity" : "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the setTimeout function in jquery.prettyPhoto.js",
 				"identifiers" : { "CVE" : [ "CVE-2013-6837" ] },
 				"info" : [ "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6837&cid=3" ]
 			},
 			{
 				"below" : "3.1.6",
 				"severity" : "high",
+				"score" : 8.5,
+				"title" : "DOM Cross-site scripting (XSS) vulnerability in jquery.prettyPhoto.js",
+				"identifiers" : {"commit" : "36463d4ab412d9f499b14abdb4dde30727e0042c"},
 				"info" : [ "https://github.com/scaron/prettyphoto/issues/149", "https://blog.anantshri.info/forgotten_disclosure_dom_xss_prettyphoto" ]
 			}
 
@@ -206,19 +220,25 @@
 		"vulnerabilities" : [
 			{
 				"below" : "2.4.0",
-				"severity": "high",
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in actionscript/Jplayer.as in the Flash SWF component (jplayer.swf) in jPlayer",
 				"identifiers": {"CVE": [ "CVE-2013-2023" ]},
 				"info" : [ "http://jplayer.org/latest/release-notes/", "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2023" ]
 			},
 			{
 				"below" : "2.3.0",
-				"severity": "high",
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Multiple cross-site scripting (XSS) vulnerabilities in actionscript/Jplayer.as in the Flash SWF component (jplayer.swf) in jPlayer",
 				"identifiers": {"CVE": ["CVE-2013-1942", "CVE-2013-2022"]},
 				"info" : [ "http://jplayer.org/latest/release-notes/", "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1942", "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2022" ]
 			},
 			{
 				"below" : "2.2.0",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Flash SWF vulnerability in jPlayer",
 				"identifiers": {
 					"release": "2.2.0",
 					"summary": "Flash SWF vulnerability"
@@ -239,6 +259,8 @@
 			{
 				"below" : "1.01",
 				"severity": "low",
+				"score" : 2.5,
+				"title" : "Unsanitized data passed to eval() in sessvars",
 				"identifiers": {"summary": "Unsanitized data passed to eval()"},
 				"info" : [ "http://www.thomasfrank.se/sessionvars.html" ]
 			}
@@ -254,6 +276,8 @@
 			{
 				"below" : "2.1",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "DOM-based XSS in swfobject",
 				"identifiers": {"summary": "DOM-based XSS"},
 				"info" : [ "https://code.google.com/p/swfobject/wiki/release_notes", "https://code.google.com/p/swfobject/source/detail?r=181" ]
 			}
@@ -269,76 +293,98 @@
 			{
 				"atOrAbove" : "3.5.0" ,
 				"below" : "3.9.2",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2013-4942" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in flashuploader.swf in the Uploader component in Yahoo! YUI ",
+				"identifiers": {"CVE": [ "CVE-2013-4942" ], "summary" : "Cross-site scripting (XSS) vulnerability in flashuploader.swf in the Uploader component in Yahoo! YUI 3.5.0 through 3.9.1, as used in Moodle through 2.1.10, 2.2.x before 2.2.11, 2.3.x before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.1, and other products, allows remote attackers to inject arbitrary web script or HTML via a crafted string in a URL." },
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2013-4942/" ]
 			},
 			{
 				"atOrAbove" : "3.2.0" ,
 				"below" : "3.9.2",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2013-4941" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in uploader.swf in the Uploader component in Yahoo! YUI ",
+				"identifiers": {"CVE": [ "CVE-2013-4941" ], "summary" : "Cross-site scripting (XSS) vulnerability in uploader.swf in the Uploader component in Yahoo! YUI 3.2.0 through 3.9.1, as used in Moodle through 2.1.10, 2.2.x before 2.2.11, 2.3.x before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.1, and other products, allows remote attackers to inject arbitrary web script or HTML via a crafted string in a URL."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2013-4941/" ]
 			},
 			{
 				"below" : "3.10.3",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2013-4940" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in io.swf in the IO Utility component in Yahoo! YUI ",
+				"identifiers": {"CVE": [ "CVE-2013-4940" ], "summary" : "Cross-site scripting (XSS) vulnerability in io.swf in the IO Utility component in Yahoo! YUI 3.10.2, as used in Moodle through 2.1.10, 2.2.x before 2.2.11, 2.3.x before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.1, and other products, allows remote attackers to inject arbitrary web script or HTML via a crafted string in a URL. NOTE: this vulnerability exists because of a CVE-2013-4939 regression."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2013-4940/" ]
 			},
 			{
 				"atOrAbove" : "3.0.0" ,
 				"below" : "3.9.2",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2013-4939" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in io.swf in the IO Utility component in Yahoo! YUI ",
+				"identifiers": {"CVE": [ "CVE-2013-4939" ], "summary" : "Cross-site scripting (XSS) vulnerability in io.swf in the IO Utility component in Yahoo! YUI 3.0.0 through 3.9.1, as used in Moodle through 2.1.10, 2.2.x before 2.2.11, 2.3.x before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.1, and other products, allows remote attackers to inject arbitrary web script or HTML via a crafted string in a URL."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2013-4939/" ]
 			},
 			{
 				"atOrAbove" : "2.8.0" ,
 				"below" : "2.9.1",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE_2012-5883" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI ",
+				"identifiers": {"CVE": [ "CVE_2012-5883" ], "summary" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI 2.8.0 through 2.9.0, as used in Bugzilla 3.7.x and 4.0.x before 4.0.9, 4.1.x and 4.2.x before 4.2.4, and 4.3.x and 4.4.x before 4.4rc1, allows remote attackers to inject arbitrary web script or HTML via vectors related to swfstore.swf, a similar issue to CVE-2010-4209." },
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2012-5883/" ]
 			},
 			{
 				"atOrAbove" : "2.5.0" ,
 				"below" : "2.9.1",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2012-5882" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI",
+				"identifiers": {"CVE": [ "CVE-2012-5882" ], "summary" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI 2.5.0 through 2.9.0 allows remote attackers to inject arbitrary web script or HTML via vectors related to uploader.swf, a similar issue to CVE-2010-4208."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2012-5882/" ]
 			},
 			{
 				"atOrAbove" : "2.4.0" ,
 				"below" : "2.9.1",
-				"severity": "high",
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI",
 				"identifiers": {"CVE": [ "CVE-2012-5881" ] },
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2012-5881/" ]
 			},
 			{
 				"below" : "2.9.0",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2010-4710" ] },
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the addItem method in the Menu widget in YUI",
+				"identifiers": {"CVE": [ "CVE-2010-4710" ], "summary" : "Cross-site scripting (XSS) vulnerability in the addItem method in the Menu widget in YUI before 2.9.0 allows remote attackers to inject arbitrary web script or HTML via a field that is added to a menu, related to documentation that specifies this field as a text field rather than an HTML field, a similar issue to CVE-2010-4569 and CVE-2010-4570."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2010-4710/" ]
 			},
 			{
 				"atOrAbove" : "2.8.0" ,
 				"below" : "2.8.2",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2010-4209" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI",
+				"identifiers": {"CVE": [ "CVE-2010-4209" ], "summary" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI 2.8.0 through 2.8.1, as used in Bugzilla 3.7.1 through 3.7.3 and 4.1, allows remote attackers to inject arbitrary web script or HTML via vectors related to swfstore/swfstore.swf."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2010-4209/" ]
 			},
 			{
 				"atOrAbove" : "2.5.0" ,
 				"below" : "2.8.2",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2010-4208" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI",
+				"identifiers": {"CVE": [ "CVE-2010-4208" ], "summary" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI 2.5.0 through 2.8.1, as used in Bugzilla, Moodle, and other products, allows remote attackers to inject arbitrary web script or HTML via vectors related to uploader/assets/uploader.swf." },
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2010-4208/" ]
 			},
 			{
 				"atOrAbove" : "2.4.0" ,
 				"below" : "2.8.2",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2010-4207" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI",
+				"identifiers": {"CVE": [ "CVE-2010-4207" ], "summary" : "Cross-site scripting (XSS) vulnerability in the Flash component infrastructure in YUI 2.4.0 through 2.8.1, as used in Bugzilla, Moodle, and other products, allows remote attackers to inject arbitrary web script or HTML via vectors related to charts/assets/charts.swf."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2010-4207/" ]
 			}
 		],
@@ -355,12 +401,16 @@
 				"atOrAbove" : "1.6.0",
 				"below" : "1.6.0.2",
 				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2008-7220" ] },
+				"score" : 7.5,
+				"title" : "Unspecified vulnerability in Prototype",
+				"identifiers": {"CVE": [ "CVE-2008-7220" ], "summary" : "Unspecified vulnerability in Prototype JavaScript framework (prototypejs) before 1.6.0.2 allows attackers to make \"cross-site ajax requests\" via unknown vectors." },
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2008-7220/" ] },
 			{
 				"below" : "1.5.1.2",
 				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2008-7220" ] },
+				"score" : "7.5",
+				"title" : " Unspecified vulnerability in Prototype",
+				"identifiers": {"CVE": [ "CVE-2008-7220" ], "summary" : "Unspecified vulnerability in Prototype JavaScript framework (prototypejs) before 1.6.0.2 allows attackers to make \"cross-site ajax requests\" via unknown vectors."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2008-7220/" ] }
 		],
 		"extractors" : {
@@ -376,26 +426,32 @@
 		"vulnerabilities" : [
 			{
 				"below" : "1.5.0",
-				"severity": "medium",
+				"severity": "low",
+				"score" : 2.7,
+				"title" : "Cross-site scripting (XSS) vulnerability in the link-to helper in Ember.js",
 				"identifiers": {
 					"CVE": [ "CVE-2014-0046" ],
 					"summary": "ember-routing-auto-location can be forced to redirect to another domain"
 				},
-				"info" : [ "https://github.com/emberjs/ember.js/blob/v1.5.0/CHANGELOG.md" ]
+				"info" : [ "https://github.com/emberjs/ember.js/blob/v1.5.0/CHANGELOG.md", "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0046"]
 			},
 			{
 				"atOrAbove" : "1.3.0-*",
 				"below" : "1.3.2",
-				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2014-0046" ] },
-				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/1h6FRgr8lXQ" ]
+				"severity": "low",
+				"score" : 2.7,
+				"title" : "Cross-site scripting (XSS) vulnerability in the link-to helper in Ember.js",
+				"identifiers": {"CVE": [ "CVE-2014-0046" ], "summary" : "Cross-site scripting (XSS) vulnerability in the link-to helper in Ember.js 1.2.x before 1.2.2, 1.3.x before 1.3.2, and 1.4.x before 1.4.0-beta.6, when used in non-block form, allows remote attackers to inject arbitrary web script or HTML via the title attribute."},
+				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/1h6FRgr8lXQ", "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0046"]
 			},
 			{
 				"atOrAbove" : "1.2.0-*",
 				"below" : "1.2.2",
-				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2014-0046" ] },
-				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/1h6FRgr8lXQ" ] },
+				"severity": "low",
+				"score" : 2.7,
+				"title" : "Cross-site scripting (XSS) vulnerability in the link-to helper in Ember.js",
+				"identifiers": {"CVE": [ "CVE-2014-0046" ], "summary" : "Cross-site scripting (XSS) vulnerability in the link-to helper in Ember.js 1.2.x before 1.2.2, 1.3.x before 1.3.2, and 1.4.x before 1.4.0-beta.6, when used in non-block form, allows remote attackers to inject arbitrary web script or HTML via the title attribute."},
+				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/1h6FRgr8lXQ", "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0046"] },
 			{
 				"atOrAbove" : "1.4.0-*",
 				"below" : "1.4.0-beta.2",
@@ -421,6 +477,8 @@
 				"atOrAbove" : "1.1.0-*",
 				"below" : "1.1.3",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Potential XSS Exploit With User-Supplied Data in ember",
 				"identifiers": {"CVE": ["CVE-2014-0013", "CVE-2014-0014"]},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/2kpXXCxISS4", "https://groups.google.com/forum/#!topic/ember-security/PSE4RzTi6l4" ]
 			},
@@ -428,6 +486,8 @@
 				"atOrAbove" : "1.0.0-*",
 				"below" : "1.0.1",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Potential XSS Exploit With User-Supplied Data in ember",
 				"identifiers": {"CVE": ["CVE-2014-0013", "CVE-2014-0014"]},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/2kpXXCxISS4", "https://groups.google.com/forum/#!topic/ember-security/PSE4RzTi6l4" ]
 			},
@@ -435,51 +495,61 @@
 				"atOrAbove" : "1.0.0-rc.1",
 				"below" : "1.0.0-rc.1.1",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2013-4170" ] },
+				"score" : 5.5,
+				"title" : "Potential XSS Exploit When Binding `tagName` to User-Supplied Data in ember",
+				"identifiers": {"CVE": [ "CVE-2013-4170" ], "summary" : "This vulnerability only affects applications that assign or bind user-provided content to `tagName`."},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/dokLVwwxAdM" ]
 			},
 			{
 				"atOrAbove" : "1.0.0-rc.2",
 				"below" : "1.0.0-rc.2.1",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2013-4170" ] },
+				"score" : 5.5,
+				"title" : "Potential XSS Exploit When Binding `tagName` to User-Supplied Data in ember",
+				"identifiers": {"CVE": [ "CVE-2013-4170" ], "summary" : "This vulnerability only affects applications that assign or bind user-provided content to `tagName`."},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/dokLVwwxAdM" ]
 			},
 			{
 				"atOrAbove" : "1.0.0-rc.3",
 				"below" : "1.0.0-rc.3.1",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2013-4170" ] },
+				"score" : 5.5,
+				"title" : "Potential XSS Exploit When Binding `tagName` to User-Supplied Data in ember",
+				"identifiers": {"CVE": [ "CVE-2013-4170" ], "summary" : "This vulnerability only affects applications that assign or bind user-provided content to `tagName`."},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/dokLVwwxAdM" ]
 			},
 			{
 				"atOrAbove" : "1.0.0-rc.4",
 				"below" : "1.0.0-rc.4.1",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2013-4170" ] },
+				"score" : 5.5,
+				"title" : "Potential XSS Exploit When Binding `tagName` to User-Supplied Data in ember",
+				"identifiers": {"CVE": [ "CVE-2013-4170" ], "summary" : "This vulnerability only affects applications that assign or bind user-provided content to `tagName`."},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/dokLVwwxAdM" ]
 			},
 			{
 				"atOrAbove" : "1.0.0-rc.5",
 				"below" : "1.0.0-rc.5.1",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2013-4170" ] },
+				"score" : 5.5,
+				"title" : "Potential XSS Exploit When Binding `tagName` to User-Supplied Data in ember",
+				"identifiers": {"CVE": [ "CVE-2013-4170" ], "summary" : "This vulnerability only affects applications that assign or bind user-provided content to `tagName`."},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/dokLVwwxAdM" ]
 			},
 			{
 				"atOrAbove" : "1.0.0-rc.6",
 				"below" : "1.0.0-rc.6.1",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2013-4170" ] },
+				"score" : 5.5,
+				"title" : "Potential XSS Exploit When Binding `tagName` to User-Supplied Data in ember",
+				"identifiers": {"CVE": [ "CVE-2013-4170" ], "summary" : "This vulnerability only affects applications that assign or bind user-provided content to `tagName`."},
 				"info" : [ "https://groups.google.com/forum/#!topic/ember-security/dokLVwwxAdM" ]
-			},
-			{
-				"below" : "0.9.7.1",
-				"info" : [ "https://github.com/emberjs/ember.js/blob/master/CHANGELOG" ]
 			},
 			{
 				"below" : "0.9.7",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Bound attributes aren't escaped properly in ember",
 				"identifiers": {
 					"bug": "699",
 					"summary": "Bound attributes aren't escaped properly"
@@ -504,55 +574,77 @@
 			{
 				"atOrAbove" : "0.4",
 				"below" : "0.4.4",
-				"severity": "high",
-				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2272"]},
+				"severity": "critical",
+				"score" : 10.0,
+				"title" : "The default configuration of the build process in Dojo is vulnerable",
+				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2272"], "summary" : ["The default configuration of the build process in Dojo 0.4.x before 0.4.4, 1.0.x before 1.0.3, 1.1.x before 1.1.2, 1.2.x before 1.2.4, 1.3.x before 1.3.3, and 1.4.x before 1.4.2 has the copyTests=true and mini=false options, which makes it easier for remote attackers to have an unspecified impact via a request to a (1) test or (2) demo component.",
+				"Unspecified vulnerability in iframe_history.html in Dojo 0.4.x before 0.4.4 has unknown impact and remote attack vectors. "]},
 				"info" : [ "http://dojotoolkit.org/blog/dojo-security-advisory", "http://www.cvedetails.com/cve/CVE-2010-2276/", "http://www.cvedetails.com/cve/CVE-2010-2272/" ]
 			},
 			{
 				"atOrAbove" : "1.0",
 				"below" : "1.0.3",
-				"severity": "high",
-				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"]},
+				"severity": "critical",
+				"score" : 10.0,
+				"title" : "Multiple vulnerabilities in Dojo",
+				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"], "summary" : ["Multiple open redirect vulnerabilities in Dojo allow remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors, possibly related to dojo/resources/iframe_history.html, dojox/av/FLAudio.js, dojox/av/FLVideo.js, dojox/av/resources/audio.swf, dojox/av/resources/video.swf, util/buildscripts/jslib/build.js, util/buildscripts/jslib/buildUtil.js, and util/doh/runner.html.",
+					"Multiple cross-site scripting (XSS) vulnerabilities in Dojo", "The default configuration of the build process in Dojo 0.4.x before 0.4.4, 1.0.x before 1.0.3, 1.1.x before 1.1.2, 1.2.x before 1.2.4, 1.3.x before 1.3.3, and 1.4.x before 1.4.2 has the copyTests=true and mini=false options, which makes it easier for remote attackers to have an unspecified impact via a request to a (1) test or (2) demo component."]},
 				"info" : [ "http://dojotoolkit.org/blog/dojo-security-advisory", "http://www.cvedetails.com/cve/CVE-2010-2276/", "http://www.cvedetails.com/cve/CVE-2010-2274/", "http://www.cvedetails.com/cve/CVE-2010-2273/" ]
 			},
 			{
 				"atOrAbove" : "1.1",
 				"below" : "1.1.2",
-				"severity": "high",
-				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"]},
+				"severity": "critical",
+				"score" : 10.0,
+				"title" : "Multiple vulnerabilities in Dojo",
+				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"], "summary" : ["Multiple open redirect vulnerabilities in Dojo allow remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors, possibly related to dojo/resources/iframe_history.html, dojox/av/FLAudio.js, dojox/av/FLVideo.js, dojox/av/resources/audio.swf, dojox/av/resources/video.swf, util/buildscripts/jslib/build.js, util/buildscripts/jslib/buildUtil.js, and util/doh/runner.html.",
+					"Multiple cross-site scripting (XSS) vulnerabilities in Dojo", "The default configuration of the build process in Dojo 0.4.x before 0.4.4, 1.0.x before 1.0.3, 1.1.x before 1.1.2, 1.2.x before 1.2.4, 1.3.x before 1.3.3, and 1.4.x before 1.4.2 has the copyTests=true and mini=false options, which makes it easier for remote attackers to have an unspecified impact via a request to a (1) test or (2) demo component."]},
 				"info" : [ "http://dojotoolkit.org/blog/dojo-security-advisory", "http://www.cvedetails.com/cve/CVE-2010-2276/", "http://www.cvedetails.com/cve/CVE-2010-2274/", "http://www.cvedetails.com/cve/CVE-2010-2273/" ]
 			},
 			{
 				"atOrAbove" : "1.2",
 				"below" : "1.2.4",
-				"severity": "high",
-				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"]},
+				"severity": "critical",
+				"score" : 10.0,
+				"title" : "Multiple vulnerabilities in Dojo",
+				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"], "summary" : ["Multiple open redirect vulnerabilities in Dojo allow remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors, possibly related to dojo/resources/iframe_history.html, dojox/av/FLAudio.js, dojox/av/FLVideo.js, dojox/av/resources/audio.swf, dojox/av/resources/video.swf, util/buildscripts/jslib/build.js, util/buildscripts/jslib/buildUtil.js, and util/doh/runner.html.",
+					"Multiple cross-site scripting (XSS) vulnerabilities in Dojo", "The default configuration of the build process in Dojo 0.4.x before 0.4.4, 1.0.x before 1.0.3, 1.1.x before 1.1.2, 1.2.x before 1.2.4, 1.3.x before 1.3.3, and 1.4.x before 1.4.2 has the copyTests=true and mini=false options, which makes it easier for remote attackers to have an unspecified impact via a request to a (1) test or (2) demo component."]},
 				"info" : [ "http://dojotoolkit.org/blog/dojo-security-advisory", "http://www.cvedetails.com/cve/CVE-2010-2276/", "http://www.cvedetails.com/cve/CVE-2010-2274/", "http://www.cvedetails.com/cve/CVE-2010-2273/" ]
 			},
 			{
 				"atOrAbove" : "1.3",
 				"below" : "1.3.3",
-				"severity": "high",
-				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"]},
+				"severity": "critical",
+				"score" : 10.0,
+				"title" : "Multiple vulnerabilities in Dojo",
+				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"], "summary" : ["Multiple open redirect vulnerabilities in Dojo allow remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors, possibly related to dojo/resources/iframe_history.html, dojox/av/FLAudio.js, dojox/av/FLVideo.js, dojox/av/resources/audio.swf, dojox/av/resources/video.swf, util/buildscripts/jslib/build.js, util/buildscripts/jslib/buildUtil.js, and util/doh/runner.html.",
+					"Multiple cross-site scripting (XSS) vulnerabilities in Dojo", "The default configuration of the build process in Dojo 0.4.x before 0.4.4, 1.0.x before 1.0.3, 1.1.x before 1.1.2, 1.2.x before 1.2.4, 1.3.x before 1.3.3, and 1.4.x before 1.4.2 has the copyTests=true and mini=false options, which makes it easier for remote attackers to have an unspecified impact via a request to a (1) test or (2) demo component."]},
 				"info" : [ "http://dojotoolkit.org/blog/dojo-security-advisory", "http://www.cvedetails.com/cve/CVE-2010-2276/", "http://www.cvedetails.com/cve/CVE-2010-2274/", "http://www.cvedetails.com/cve/CVE-2010-2273/" ]
 			},
 			{
 				"atOrAbove" : "1.4",
 				"below" : "1.4.2",
-				"severity": "high",
-				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"]},
+				"severity": "critical",
+				"score" : 10.0,
+				"title" : "Multiple vulnerabilities in Dojo",
+				"identifiers": {"CVE": ["CVE-2010-2276", "CVE-2010-2274", "CVE-2010-2273"], "summary" : ["Multiple open redirect vulnerabilities in Dojo allow remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors, possibly related to dojo/resources/iframe_history.html, dojox/av/FLAudio.js, dojox/av/FLVideo.js, dojox/av/resources/audio.swf, dojox/av/resources/video.swf, util/buildscripts/jslib/build.js, util/buildscripts/jslib/buildUtil.js, and util/doh/runner.html.",
+					"Multiple cross-site scripting (XSS) vulnerabilities in Dojo", "The default configuration of the build process in Dojo 0.4.x before 0.4.4, 1.0.x before 1.0.3, 1.1.x before 1.1.2, 1.2.x before 1.2.4, 1.3.x before 1.3.3, and 1.4.x before 1.4.2 has the copyTests=true and mini=false options, which makes it easier for remote attackers to have an unspecified impact via a request to a (1) test or (2) demo component."]},
 				"info" : [ "http://dojotoolkit.org/blog/dojo-security-advisory", "http://www.cvedetails.com/cve/CVE-2010-2276/", "http://www.cvedetails.com/cve/CVE-2010-2274/", "http://www.cvedetails.com/cve/CVE-2010-2273/" ]
 			},
 			{
 				"below" : "1.4.2",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2010-2275" ] },
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in Dojo",
+				"identifiers": {"CVE": [ "CVE-2010-2275" ], "summary" : "Cross-site scripting (XSS) vulnerability in dijit/tests/_testCommon.js in Dojo Toolkit SDK before 1.4.2 allows remote attackers to inject arbitrary web script or HTML via the theme parameter, as demonstrated by an attack against dijit/tests/form/test_Button.html."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2010-2275/"]
 			},
 			{
 				"below" : "1.1",
 				"severity": "medium",
-				"identifiers": {"CVE": [ "CVE-2008-6681" ] },
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in dijit.Editor in Dojo",
+				"identifiers": {"CVE": [ "CVE-2008-6681" ], "summary" : "Cross-site scripting (XSS) vulnerability in dijit.Editor in Dojo before 1.1 allows remote attackers to inject arbitrary web script or HTML via XML entities in a TEXTAREA element." },
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2008-6681/"]
 			}
 
@@ -582,7 +674,10 @@
 			{
 				"below" : "1.2.0",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "AngularJS is vulnerable against arbitrary execution and possible XSS",
 				"identifiers": {
+					"release" : "1.0.8 and 1.2.0",
 					"summary": [
 						"execution of arbitrary javascript",
 						"sandboxing fails",
@@ -594,6 +689,8 @@
 			{
 				"below" : "1.2.19",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "XSS vulnerabilities and execution of arbitrary javascript in AngularJS",
 				"identifiers": {
 					"release": "1.3.0-beta.14",
 					"summary": "execution of arbitrary javascript"
@@ -603,6 +700,8 @@
 			{
 				"below" : "1.2.24",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "AngularJS sandbox bypass",
 				"identifiers": {
 					"commit": "b39e1d47b9a1b39a9fe34c847a81f589fba522f8",
 					"summary": "execution of arbitrary javascript"
@@ -613,9 +712,13 @@
 				"atOrAbove" : "1.3.0-beta.1",
 				"below" : "1.3.0-beta.14",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "XSS vulnerabilities and execution of arbitrary javascript in AngularJS",
 				"identifiers": {
 					"commit": "b39e1d47b9a1b39a9fe34c847a81f589fba522f8",
-					"summary": "execution of arbitrary javascript"
+					"summary": ["execution of arbitrary javascript",
+											"possible cross-site scripting vulnerabilities"
+											]
 				},
 				"info" : [ "https://github.com/angular/angular.js/blob/b3b5015cb7919708ce179dc3d6f0d7d7f43ef621/CHANGELOG.md" ]
 			},
@@ -623,6 +726,8 @@
 				"atOrAbove" : "1.3.0-beta.1",
 				"below" : "1.3.0-rc.1",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "XSS vulnerabilities and execution of arbitrary javascript in AngularJS",
 				"identifiers": {
 					"commit": "b39e1d47b9a1b39a9fe34c847a81f589fba522f8",
 					"summary": "execution of arbitrary javascript"
@@ -632,10 +737,13 @@
 			{
 				"below" : "1.3.2",
 				"severity": "low",
+				"score" : 2.5,
+				"title" : "Sandbox bypasses on AngularJS",
 				"identifiers": {
+					"release" : "1.3.2",
 					"summary": "server-side xss can bypass CSP"
 				},
-				"info" : [ "https://github.com/angular/angular.js/blob/master/CHANGELOG.md" ]
+				"info" : [ "https://github.com/angular/angular.js/blob/d277ac2eb8331556f1cc4c86006e63369ea95e32/CHANGELOG.md" ]
 			}
 
 		],
@@ -643,7 +751,7 @@
 			"func"			: [ "angular.version.full" ],
 			"uri"			: [ "/(§§version§§)/angular(\\.min)?\\.js" ],
 			"filename"		: [ "angular(?:js)?-(§§version§§)(.min)?\\.js" ],
-			"filecontent"	: [ 
+			"filecontent"	: [
 				"/\\*[ \n]+AngularJS v(§§version§§)",
 				"http://errors.angularjs.org/(§§version§§)/"
 			],
@@ -655,6 +763,8 @@
 			{
 				"below" : "0.5.0",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "XSS vulnerabilities in backbone.js",
 				"identifiers": {
 					"release": "0.5.0",
 					"summary": "cross-site scripting vulnerability"
@@ -675,6 +785,8 @@
 			{
 				"below" : "0.3.1",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "Arbitrary code execution in mustache.js",
 				"identifiers": {
 					"bug": "112",
 					"summary": "execution of arbitrary javascript"
@@ -696,10 +808,13 @@
 			{
 				"below" : "1.0.0.beta.3",
 				"severity": "medium",
+				"score" : 5.5,
+				"title" : "XSS in handlebars.js",
 				"identifiers": {
+					"commit" : "f07f70ca420e20a8c9e43545ebcbf4026718c3dd",
 					"summary": "poorly sanitized input passed to eval()"
 				},
-				"info" : [ "https://github.com/wycats/handlebars.js/pull/68" ] } ],
+				"info" : [ "https://github.com/wycats/handlebars.js/pull/68", "https://github.com/wycats/handlebars.js/commit/f07f70ca420e20a8c9e43545ebcbf4026718c3dd" ] } ],
 		"extractors" : {
 			"func"			: [ "Handlebars.VERSION" ],
 			"uri"			: [ "/(§§version§§)/handlebars(\\.min)?\\.js" ],
@@ -715,13 +830,17 @@
 			{
 				"below" : "2.4.18",
 				"severity": "high",
+				"score" : 8.5,
+				"title" : "HTML injection vulnerabilities in easyXDM",
 				"identifiers": {"CVE": [ "CVE-2013-5212" ] },
 				"info" : [ "http://blog.kotowicz.net/2013/09/exploiting-easyxdm-part-1-not-usual.html", "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5212" ]
 			},
 			{
 				"below" : "2.4.19",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2014-1403" ] },
+				"severity": "medium",
+				"score" : 4.3,
+				"title" : "Cross-site scripting (XSS) vulnerability in name.html in easyXDM",
+				"identifiers": {"CVE": [ "CVE-2014-1403" ], "summary" : "Cross-site scripting (XSS) vulnerability in name.html in easyXDM before 2.4.19 allows remote attackers to inject arbitrary web script or HTML via the location.hash value."},
 				"info" : [ "http://blog.kotowicz.net/2014/01/xssing-with-shakespeare-name-calling.html", "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1403" ]
 			}
 		],
@@ -738,14 +857,18 @@
 		"vulnerabilities" : [
 			{
 				"below" : "1.5.4",
-				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2012-2401" ] },
+				"severity": "medium",
+				"score" : 5.0,
+				"title" : "Scrpting vulnerabilities in plupload",
+				"identifiers": {"CVE": [ "CVE-2012-2401" ] , "summary" : "Plupload before 1.5.4, as used in wp-includes/js/plupload/ in WordPress before 3.3.2 and other products, enables scripting regardless of the domain from which the SWF content was loaded, which allows remote attackers to bypass the Same Origin Policy via crafted content."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2012-2401/" ]
 			},
 			{
 				"below" : "1.5.5",
 				"severity": "high",
-				"identifiers": {"CVE": [ "CVE-2013-0237" ] },
+				"score" : 4.3,
+				"title": "Cross-site scripting (XSS) vulnerability in Plupload",
+				"identifiers": {"CVE": [ "CVE-2013-0237" ] , "summary" : "Cross-site scripting (XSS) vulnerability in Plupload.as in Moxiecode plupload before 1.5.5, as used in WordPress before 3.5.1 and other products, allows remote attackers to inject arbitrary web script or HTML via the id parameter."},
 				"info" : [ "http://www.cvedetails.com/cve/CVE-2013-0237/" ]
 			}
 		],
@@ -765,7 +888,11 @@
 			{
 				"below" : "0.6.1",
 				"severity": "medium",
-				"identifiers": { },
+				"score" : 5.5,
+				"title" : "DOMPurify is vulnerable",
+				"identifiers": {
+					"release" : "0.6.1"
+					},
 				"info" : [ "https://github.com/cure53/DOMPurify/releases/tag/0.6.1" ]
 			}
 		],
@@ -780,23 +907,23 @@
 	"DWR" : {
 		"vulnerabilities" : [
 			{
-				"below" : "1.1.4",
-				"severity": "high",
-				"identifiers": { "CVE" : "CVE-2007-01-09" },
-				"info" : [ "http://www.cvedetails.com/cve/CVE-2014-5326/", "http://www.cvedetails.com/cve/CVE-2014-5326/" ]
-			},
-			{
 				"below" : "2.0.11",
 				"severity": "medium",
-				"identifiers": { "CVE" : ["CVE-2014-5326", "CVE-2014-5325"] },
-				"info" : [ "http://www.cvedetails.com/cve/CVE-2014-5326/", "http://www.cvedetails.com/cve/CVE-2014-5326/" ]
+				"score" : 5.0,
+				"title" : "Cross-site scripting (XSS) and RFI vulnerabilities in Direct Web Remoting (DWR)",
+				"identifiers": { "CVE" : ["CVE-2014-5326", "CVE-2014-5325"], "summary" : ["Cross-site scripting (XSS) vulnerability in Direct Web Remoting (DWR) through 2.0.10 and 3.x through 3.0.RC2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.",
+				"The (1) DOMConverter, (2) JDOMConverter, (3) DOM4JConverter, and (4) XOMConverter functions in Direct Web Remoting (DWR) through 2.0.10 and 3.x through 3.0.RC2 allow remote attackers to read arbitrary files via DOM data containing an XML external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue."]},
+				"info" : [ "http://www.cvedetails.com/cve/CVE-2014-5326/", "http://www.cvedetails.com/cve/CVE-2014-5325/" ]
 			},
 			{
 				"above" : "3",
 				"below" : "3.0.RC3",
 				"severity": "medium",
-				"identifiers": { "CVE" : ["CVE-2014-5326", "CVE-2014-5325"] },
-				"info" : [ "http://www.cvedetails.com/cve/CVE-2014-5326/", "http://www.cvedetails.com/cve/CVE-2014-5326/" ]
+				"score" : 5.0,
+				"title" : "Cross-site scripting (XSS) and RFI vulnerabilities in Direct Web Remoting (DWR)",
+				"identifiers": { "CVE" : ["CVE-2014-5326", "CVE-2014-5325"], "summary" : ["Cross-site scripting (XSS) vulnerability in Direct Web Remoting (DWR) through 2.0.10 and 3.x through 3.0.RC2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.",
+				"The (1) DOMConverter, (2) JDOMConverter, (3) DOM4JConverter, and (4) XOMConverter functions in Direct Web Remoting (DWR) through 2.0.10 and 3.x through 3.0.RC2 allow remote attackers to read arbitrary files via DOM data containing an XML external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue."]},
+				"info" : [ "http://www.cvedetails.com/cve/CVE-2014-5326/", "http://www.cvedetails.com/cve/CVE-2014-5325/" ]
 			}
 		],
 		"extractors" : {
