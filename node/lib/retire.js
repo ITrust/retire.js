@@ -1,6 +1,6 @@
-/* 
- * This file is used by the browser plugins and the Cli scanner and thus 
- * cannot have any external dependencies (no require)	
+/*
+ * This file is used by the browser plugins and the Cli scanner and thus
+ * cannot have any external dependencies (no require)
  */
 
 
@@ -70,6 +70,12 @@ function check(results, repo) {
 				if (vulns[i].severity) {
 					vulnerability.severity = vulns[i].severity;
 				}
+				if (vulns[i].score) {
+					vulnerability.score = vulns[i].score;
+				}
+				if (vulns[i].title) {
+					vulnerability.score = vulns[i].title;
+				}
 				if (vulns[i].identifiers) {
 					vulnerability.identifiers = vulns[i].identifiers;
 				}
@@ -83,7 +89,7 @@ function check(results, repo) {
 
 function unique(ar) {
 	var r = [];
-	ar.forEach(function(e) { 
+	ar.forEach(function(e) {
 		if (r.indexOf(e) == -1) r.push(e);
 	});
 	return r;
@@ -159,6 +165,3 @@ exports.scanNodeDependency = function(dependency, npmrepo) {
 	if (!isDefined(npmrepo[dependency.component])) return [];
 	return check([dependency], npmrepo);
 };
-
-
-

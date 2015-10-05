@@ -28,7 +28,7 @@
 				"severity" : "medium",
 				"score" : 4.3,
 				"title" : "Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3",
-				"identifiers" : { "CVE": [ "CVE-2011-4969" ] },
+				"identifiers" : { "CVE": [ "CVE-2011-4969" ], "summary" : "Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3, when using location.hash to select elements, allows remote attackers to inject arbitrary web script or HTML via a crafted tag." },
 				"info" : [ "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2011-4969" , "http://research.insecurelabs.org/jquery/test/" ]
 			},
 			{
@@ -101,7 +101,7 @@
 				"severity": "high",
 				"score" : 8.5,
 				"title" : "Remote cross-site scripting (XSS) vulnerability in jQuery-mobile before 1.0.1",
-				"identifiers": {"osvdb": "94317"},
+				"identifiers": {"osvdb": "94317", "summary" : "jQuery Mobile contains a flaw that allows a remote cross-site scripting (XSS) attack. This flaw exists because the application does not validate certain user supplied input when handling forms upon submission to the jquery.movile.navigation.js script. This may allow an attacker to create a specially crafted request that would execute arbitrary script code in a user's browser within the trust relationship between their browser and the server."},
 				"info": [ "http://osvdb.org/show/osvdb/94317" ]
 			},
 			{
@@ -112,7 +112,7 @@
 				"identifiers": {
 					"issue": "4787",
 					"release": "http://jquerymobile.com/changelog/1.1.2/",
-					"summary": "location.href cross-site scripting"
+					"summary": "XSS with location.href behavior of some browsers"
 				},
 				"info": [ "http://jquerymobile.com/changelog/1.1.2/", "https://github.com/jquery/jquery-mobile/issues/4787" ]
 			},
@@ -124,7 +124,7 @@
 				"identifiers": {
 					"issue": "4787",
 					"release": "http://jquerymobile.com/changelog/1.2.0/",
-					"summary": "location.href cross-site scripting"
+					"summary": "XSS with location.href behavior of some browsers"
 				},
 				"info": [ "http://jquerymobile.com/changelog/1.2.0/", "https://github.com/jquery/jquery-mobile/issues/4787" ]
 			}
@@ -194,7 +194,7 @@
 				"severity" : "medium",
 				"score" : 4.3,
 				"title" : "Cross-site scripting (XSS) vulnerability in the setTimeout function in jquery.prettyPhoto.js",
-				"identifiers" : { "CVE" : [ "CVE-2013-6837" ] },
+				"identifiers" : { "CVE" : [ "CVE-2013-6837" ], "summary" : "Cross-site scripting (XSS) vulnerability in the setTimeout function in js/jquery.prettyPhoto.js in prettyPhoto 3.1.4 and earlier allows remote attackers to inject arbitrary web script or HTML via a crafted PATH_INTO to the default URI." },
 				"info" : [ "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6837&cid=3" ]
 			},
 			{
