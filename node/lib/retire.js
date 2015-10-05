@@ -74,7 +74,7 @@ function check(results, repo) {
 					vulnerability.score = vulns[i].score;
 				}
 				if (vulns[i].title) {
-					vulnerability.score = vulns[i].title;
+					vulnerability.title = vulns[i].title;
 				}
 				if (vulns[i].identifiers) {
 					vulnerability.identifiers = vulns[i].identifiers;
